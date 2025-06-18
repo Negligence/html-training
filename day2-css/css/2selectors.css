@@ -1,0 +1,78 @@
+/* CTRL + SPACE = Trigger Suggest */
+
+/* Selector Specificity */
+/* #id | .class | element */
+
+/* element */
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 500px;
+}
+
+div {color: springgreen;}
+
+/* .class */
+.children {color: darkorange;}
+
+/* #id */
+#child10 {color: dodgerblue;}
+
+/* element.class 11 */
+div.children {color: crimson;}
+
+/* element#id 101 */
+div#child9 {color: coral;}
+
+/* .class#id 110 */
+.children#child9 {color: violet;}
+
+/* element.class#id 111 */
+div.children#child10 {color: aquamarine;}
+
+/* Multi-Selector = , */
+h1,h2,h3,h4,h5,h6 {margin: 0;}
+
+/* Attribute Selector = [] */
+[title] {color: crimson;}
+
+[title=h1] {color: navy;}
+
+/* ::Pseudo Element */
+::selection {
+  background-color: darkslateblue;
+  color: white;
+}
+
+h2::before {content: '🤘🏻';}
+h2::after {content: '👊🏻';}
+
+/* :Pseudo Class */
+a:hover {color: goldenrod;}
+a:visited {color: chocolate;}
+a:active {color: plum;}
+a:focus {outline-color: aqua;}
+:checked {accent-color: rebeccapurple;}
+
+/* Combinators */
+
+/* SPACE = Descendant Selector */
+ul a {text-decoration: none;}
+
+/* * = Wildcard Selector */
+ul * {font-style: italic;}
+
+/* > = Direct Child Selector */
+ul > li {list-style-type: none;}
+
+ul > li > a {color: chocolate;}
+
+/* + = Adjacent Sibling Selector */
+#adjacent:checked + li {opacity: 0;}
+
+/* ~ = General Sibling Selector */
+#general:checked ~ li, #general {opacity: 0;}
+
+li {transition: opacity 300ms;}
+
+a {transition: color 300ms;}
