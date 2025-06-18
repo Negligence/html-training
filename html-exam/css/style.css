@@ -1,0 +1,22 @@
+:root {
+--blizzard-blue: #c2f0ff;
+--light-blue: #aed8e6;
+--pewter-blue: #8cadb8;
+--cadet: #617880;
+--outer-space-crayola: #303c40;
+}
+
+.c-text-white {color: var(--blizzard-blue);}
+.c-text-accent {color: var(--light-blue);}
+.c-text-secondary {color: var(--pewter-blue);}
+.c-text-primary {color: var(--cadet);}
+.c-text-black {color: var(--outer-space-crayola);}
+
+.c-bg-white {background-color: var(--blizzard-blue);}
+.c-bg-accent {background-color: var(--light-blue);}
+.c-bg-secondary {background-color: var(--pewter-blue);}
+.c-bg-primary {background-color: var(--cadet);}
+.c-bg-black {background-color: var(--outer-space-crayola);}
+
+nav a {transition: color 300ms;}
+.c-active {color: var(--outer-space-crayola);}

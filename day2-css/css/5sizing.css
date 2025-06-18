@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after {box-sizing: inherit;}
+
+body,h1,h2,h3,h4,h5,h6,p {margin: 0;}
+
+body {
+  width: inherit;
+  height: inherit;
+}
+
+/* Width & Height | 100% auto */
+/* Pixels = px */
+#parent {
+  border: 10px solid goldenrod;
+
+  /* min- prevents undersizing */
+  /* max- prevents oversizing */
+
+  /* min-width: 450px; */
+  /* max-width: 500px; */
+  
+  /* clamp(min, ideal, max) */
+  width: clamp(450px, 80vw, 500px);
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+
+  /* Center Container */
+  /* margin-inline: auto; */
+
+  /* Right Align Container */
+  margin-left: auto;
+}
+
+/* Percentage = % According to Parent */
+#child1 {
+  background-color: chocolate;
+  width: 50%;
+  height: 50%;
+}
+
+/* ViewportHeight & ViewportWidth = vh vw */
+#child2 {
+  background-color: aqua;
+  width: 20vw;
+  height: 20vh;
+}
+
+/* ch = 0 Character of Font Size */
+/* em = Parent Font Size */
+/* rem = Root Font Size */
+#child3 {
+  background-color: coral;
+  width: 20ch;
+  height: 20ch;
+  /* writing-mode: vertical-lr; */
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
